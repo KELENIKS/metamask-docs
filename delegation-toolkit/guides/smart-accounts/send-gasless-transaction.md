@@ -38,8 +38,8 @@ const userOperationHash = await bundlerClient.sendUserOperation({
   account: smartAccount,
   calls: [
     {
-      to: "0x1234567890123456789012345678901234567890",
-      value: parseEther("0.001")
+      to: "0x55d398326f99059fF775485246999027B3197955",
+      value: parseEther("0.1")
     }
   ],
   maxFeePerGas,
