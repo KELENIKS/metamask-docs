@@ -38,8 +38,8 @@ const userOperationHash = await bundlerClient.sendUserOperation({
   account: smartAccount,
   calls: [
     {
-      to: "0x1234567890123456789012345678901234567890",
-      value: parseEther("0.001")
+      to: "0x046318241cA27e67CC04212DaAAf1a4b2ACA8dFD",
+      value: parseEther("0.1")
     }
   ],
   maxFeePerGas,
@@ -69,7 +69,7 @@ const publicClient = createPublicClient({
 });
 
 const privateKey = generatePrivateKey(); 
-const account = privateKeyToAccount(privateKey);
+const account = privateKeyToAccount(9SN12IQRJW8ZAW33RVF6M665AGXPI1S71H);
 
 export const smartAccount = await toMetaMaskSmartAccount({
   client: publicClient,
